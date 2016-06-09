@@ -1,0 +1,100 @@
+.calendar--day {
+	display: inline-block;
+    width: 50px;
+	font-size: 2em;
+}
+
+.calendar--week  {
+    position: relative;
+}
+
+.calendar--week__selected {
+    background-color: #cccaca;
+}
+.clusterize-content {
+	margin: 0 auto;
+	width:auto;
+}
+
+.clusterize-scroll{
+    max-height: 600px;
+    overflow: auto;
+}
+
+#scrollArea{
+	position: absolute;
+    z-index: 1;
+    top: 45px;
+    bottom: 48px;
+    left: 0;
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+}
+#contentArea{
+	position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+.calendar--line{
+	height:43px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    padding: 0 10px;
+    line-height: 43px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #fff;
+    background-color: #fafafa;
+    font-size: 16px;
+}
+.list{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+/* By default extra tag .clusterize-keep-parity added to keep parity of rows.
+ * Useful when used :nth-child(even/odd)
+ */
+.clusterize-extra-row.clusterize-keep-parity{
+  display: none;
+}
+
+/* During initialization clusterize adds tabindex to force the browser to keep focus
+ * on the scrolling list, see issue #11
+ * Outline removes default browser's borders for focused elements.
+ */
+.clusterize-content{
+    outline: 0;
+}
+
+/* centering message that appears when no data provided
+ */
+.clusterize-no-data td{
+  text-align: center;
+}

@@ -1,0 +1,46 @@
+{
+  "name": "calendar",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/calendar.js",
+  "scripts": {
+    "start": "webpack-dev-server --content-base ./static"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ilikosov/calendar.git"
+  },
+  "keywords": [],
+  "author": "ilikosov <ilikosov@65apps.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ilikosov/calendar/issues"
+  },
+  "homepage": "https://github.com/ilikosov/calendar",
+  "devDependencies": {
+    "babel-core": "^6.5.1",
+    "babel-loader": "^6.2.2",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-register": "^6.5.1",
+    "chai": "^3.4.1",
+    "css-loader": "^0.23.1",
+    "ejs-loader": "^0.2.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "glob": "^6.0.3",
+    "json-loader": "^0.5.3",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0",
+    "style-loader": "^0.13.1",
+    "underscore": "^1.8.3",
+    "webpack": "^1.12.9"
+  },
+  "dependencies": {
+    "clusterize.js": "^0.16.0",
+    "iscroll": "^5.2.0",
+    "jquery": "^2.2.4",
+    "reset.css": "^2.0.2",
+    "smooth-scroll": "github:cferdinandi/smooth-scroll"
+  }
+}

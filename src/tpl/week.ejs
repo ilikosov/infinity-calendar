@@ -1,0 +1,5 @@
+<div class="calendar--week"  data-line_id=<%=data.line_id%>>
+	<% (data.days || []).forEach(function(val){ %>
+		<div class="calendar--day"><%=val%></div>	
+	<% }) %>
+</div>
