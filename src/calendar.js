@@ -1,7 +1,7 @@
 import calendarTpl from './tpl/calendar.ejs';
 import titleTpl from './tpl/title.ejs';
 import weekTpl from  './tpl/week.ejs';
-import IScroll from 'iscroll';
+import IScroll from './lib/iscroll';
 
 import './css/calendar.css';
 
